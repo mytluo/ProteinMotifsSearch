@@ -1,0 +1,109 @@
+body {
+    font: 'Book Antiqua', sans-serif;
+    padding: 20px;
+}
+
+/* format input box for FASTA formatted protein queries */
+.queryfield {
+	width: 700px; 
+	height: 200px; 
+	border: 1px solid #999999; 
+	padding: 5px;
+    font-family: Courier;
+    font-size: 12pt;
+    resize: none;
+}
+
+/* format for all clickable buttons */
+.button {
+    font-size: 12px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.25s; /* Safari */
+    transition-duration: 0.25s;
+}
+.button:hover{
+    font-weight: bold;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 12px 35px 0 rgba(0,0,0,0.19);
+}
+
+/* format for "Show Input Form" button */
+#toggleform {
+    display: none;
+}
+
+/* format for checkbox menu of queried proteins */
+section#menu {
+    display: none;
+    font-size: 18px;
+}
+
+/* format for results table */
+section#results {
+    display: none;
+}
+
+/* highlight Prosite pattern */
+
+/* odd numbered matches in protein sequence are highlighted in light red */
+mark {
+    background-color: #F88379;
+    color: black;
+    font-weight: bold;
+}
+
+/* even numbered matches in protein sequence are highlighted in dark red */
+mark:nth-child(2n) {
+    background-color: #B31B1B;
+    color: white;
+    font-weight: bold;
+}
+
+/* format for Prosite pattern in results table */
+.pattern {
+    color: #B31B1B;
+    font-weight: bold;
+}
+
+/* format for "Notes" text in results table */
+.label {
+    font-style: italic;
+}
+
+/* format for each box/row of motif sites table */
+.site {
+    box-sizing: border-box;
+    border: 1px solid #999999;
+    margin: 20px;
+    height: auto;
+    overflow: scroll;
+}
+
+/* format for the information for each motif in results table */
+.info {
+    box-sizing: border-box;
+    font-size: 16pt;
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: auto;
+}
+
+/* format for the protein query in the results table */ 
+.query {
+    box-sizing: border-box;    
+    font-family: Courier;
+    font-size: 12pt;
+    width: 70%;
+    height: auto;
+    vertical-align: top;
+    padding: 5px 10px 5px 10px;
+    word-wrap: break-word;
+    float: right;
+    overflow: scroll;
+}
+
+
+

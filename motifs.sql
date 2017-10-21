@@ -1,4 +1,4 @@
-create table if not exists mluozha1_final.protein_motifs (
+create table if not exists motifs.protein_motifs (
 	ID int not null auto_increment primary key,
 	motif varchar(255) not null,
 	subtype varchar(255),
